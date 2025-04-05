@@ -2,7 +2,12 @@ import numpy as np
 import pickle
 import streamlit as st
 
-
+# Load the trained model
+try:
+    loaded_model = pickle.load(open('C:/Users/91639/Desktop/final/trained_model.sav', 'rb'))
+    st.success("Model loaded successfully!")
+except Exception as e:
+    st.error(f"Error loading model: {e}")
 
 # Create a function for prediction
 def rainfall_prediction(input_data):
