@@ -27,7 +27,7 @@ def main():
     st.title('🌧️ Insightful Rainfall Forecasting')
 
     # Add the VBSPU logo at the top
-    st.image(r'C:\Users\91639\Desktop\final\vbspu-logo.png', width=200) # Use your logo path here
+    st.image('vbspu-logo.png', width=200) # Use your logo path here
 
     # Displaying the project synopsis and details
     st.subheader("Project Synopsis")
