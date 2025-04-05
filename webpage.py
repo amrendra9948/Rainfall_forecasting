@@ -4,7 +4,7 @@ import streamlit as st
 
 # Load the trained model
 try:
-    loaded_model = pickle.load(open('C:/Users/91639/Desktop/final/trained_model.sav', 'rb'))
+    loaded_model = pickle.load(open('trained_model.sav', 'rb'))
     st.success("Model loaded successfully!")
 except Exception as e:
     st.error(f"Error loading model: {e}")
